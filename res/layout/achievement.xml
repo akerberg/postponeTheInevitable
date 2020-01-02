@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/mainmenubackground">
+
+    <RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical" 
+	    android:padding="5dp"
+	>
+	    
+    <ImageButton
+        android:id="@+id/closeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:maxHeight="36dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/closebutton" />    
+    
+    <ImageView
+        android:id="@+id/headline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:maxHeight="30dp"
+        android:src="@drawable/achievement_logo" />    
+    
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_below="@+id/closeButton"
+	    android:paddingLeft="7dp"
+	    android:paddingRight="7dp"
+	    android:paddingTop="3dp"
+	    android:paddingBottom="3dp"
+	    android:orientation="vertical" >
+
+	    <ListView
+	        android:id="@+id/list"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:divider="#00000000"
+	        android:dividerHeight="2dp"
+		    android:cacheColorHint="#00000000"
+	        android:listSelector="@drawable/achievement_selector" />
+	    
+	</LinearLayout>
+	</RelativeLayout>
+		
+	<com.google.ads.AdView
+	    android:id="@+id/adView4"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    ads:adSize="BANNER"
+	    ads:adUnitId="ca-app-pub-9639252239100571/1091710243"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+	    ads:loadAdOnCreate="true">
+	</com.google.ads.AdView>
+    
+</RelativeLayout>

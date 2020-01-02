@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainmenubackground"
+    android:orientation="vertical"
+    android:padding="6dp" >
+
+	    <ImageButton
+	        android:id="@+id/closeButton"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:adjustViewBounds="true"
+	        android:background="@null"
+	        android:maxHeight="36dp"
+	        android:paddingRight="5dp"
+	        android:paddingBottom="5dp"
+	        android:scaleType="centerInside"
+	        android:src="@drawable/closebutton" />
+
+		<ScrollView
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:layout_below="@+id/closeButton"
+		    android:layout_centerHorizontal="true"
+			android:requiresFadingEdge="vertical"
+			android:fadingEdge="horizontal"
+		    android:fadingEdgeLength="30dp"		    
+		    android:scrollbars="vertical|none" >
+        
+	    <RelativeLayout
+	        android:id="@+id/linearLayout1"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="top"
+	        android:orientation="horizontal"
+	        android:padding="6dp"
+	        android:scrollbarAlwaysDrawVerticalTrack="true" >
+
+	        <TextView
+	            android:id="@+id/helpText"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentLeft="true"
+	            android:layout_alignParentTop="true"
+	            android:layout_toLeftOf="@+id/helpImage1"
+	            android:text=""
+	            android:textColor="#000000"
+	            android:textSize="16sp" />
+	        
+	        <ImageView
+	            android:id="@+id/helpImage1"
+	            android:layout_width="300dp"
+	            android:layout_height="180dp"
+	            android:layout_alignParentRight="true"
+	            android:layout_alignParentTop="true"
+	            android:layout_marginBottom="20dp" />
+    
+		    <ImageView
+		        android:id="@+id/helpImage2"
+		        android:layout_width="300dp"
+		        android:layout_height="180dp"
+	            android:layout_alignParentRight="true"
+		        android:layout_below="@+id/helpImage1"
+		        />
+
+	    </RelativeLayout>
+	    </ScrollView>
+
+	    <ImageView
+	        android:id="@+id/headline"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="false"
+	        android:layout_alignParentTop="true"
+	        android:layout_centerHorizontal="true"
+	        android:adjustViewBounds="true"
+	        android:maxHeight="30dp"
+	        android:src="@drawable/howtoplay" />
+
+
+</RelativeLayout>

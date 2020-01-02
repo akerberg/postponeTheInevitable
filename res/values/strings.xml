@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Postpone Defense</string>
+    <string name="clear_title">Game reset</string>
+    <string name="clear_summary">Warning! This will permanently reset all your progress.</string>
+    <string name="clear_message">Game data reset</string>
+    <string name="soundenabled_title">Sound</string>
+    <string name="soundenabled_summaryOn">On</string>
+    <string name="soundenabled_summaryOff">Off</string>
+    <string name="about_summary">Current Version: %s. Click to show more information about the game. </string>
+    <string name="about_title">Help</string>
+	<string name="achievements_title">Achievements</string>
+    <string name="level_dialog_play_level">PLAY LEVEL</string>
+    <string name="level_dialog_time">Best time: </string>
+    <string name="level_dialog_date">Date for best time: </string>
+    <string name="level_dialog_time2">--:--</string>
+    <string name="level_dialog_taget_time">Target time:</string>
+    <string name="level_dialog_help">HELP</string>
+    <string name="level_locked">Level locked. Complete previous levels to access.</string>
+    <string name="offset_summary">The marker used for placement can be directly below your finger, a little to the left or a little to the right</string>
+    <string name="offset_title">Set marker offset</string>
+    <color name="transparent">#00000000</color>
+    <string name="settings">Settings</string>
+    
+</resources>
